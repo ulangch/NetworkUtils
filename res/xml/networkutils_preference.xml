@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/capture" >
+        
+        <SwitchPreference
+            android:key="isCapturing"
+            android:summary="@string/capture_controller_summary"
+            android:title="@string/capture_controller_title">
+        </SwitchPreference>
+
+        <ListPreference
+            android:defaultValue="wlan0"
+            android:entries="@array/capture_interface_list_entry"
+            android:entryValues="@array/capture_interface_list_value"
+            android:key="interface"
+            android:title="@string/capture_interface_title" >
+        </ListPreference>
+
+        <EditTextPreference
+            android:key="write_file"
+            android:summary="@string/capture_write_file_summary"
+            android:defaultValue="@string/capture_write_file_defaultvalue"
+            android:title="@string/capture_write_file_title" >
+        </EditTextPreference>
+<!--
+        <CheckBoxPreference
+            android:key="isAutoConnect"
+            android:summary="@string/auto_connect_summary"
+            android:title="@string/auto_connect" >
+        </CheckBoxPreference>
+
+        <Preference
+            android:key="bypassAddrs"
+            android:summary="@string/set_bypass_summary"
+            android:title="@string/set_bypass" >
+        </Preference>
+  -->
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/wl_title" >
+        
+        <SwitchPreference
+            android:key="isAnalysising"
+            android:summary="@string/wl_controller_summary"
+            android:title="@string/wl_controller_title">
+        </SwitchPreference>
+        <EditTextPreference
+            android:key="wl_latency_timeMs"
+            android:summary="@string/wl_latency_timeMs_summary"
+            android:defaultValue="@string/wl_latency_timeMs_defaultvalue"
+            android:title="@string/wl_latency_timeMs_title" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:key="wl_latency_logfile"
+            android:summary="@string/wl_latency_logfile_summary"
+            android:defaultValue="@string/wl_latency_logfile_defaultvalue"
+            android:title="@string/wl_latency_logfile_title" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:key="wl_latency_badlatency_logfile"
+            android:summary="@string/wl_latency_badlatency_logfile_summary"
+            android:defaultValue="@string/wl_latency_badlatency_logfile_defaultvalue"
+            android:title="@string/wl_latency_badlatency_logfile_title" >
+        </EditTextPreference>
+    </PreferenceCategory>
+
+<!-- 
+    <PreferenceCategory android:title="@string/user_cat" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="isAuth"
+            android:title="@string/auth" >
+        </CheckBoxPreference>
+
+        <EditTextPreference
+            android:key="user"
+            android:summary="@string/user_summary"
+            android:title="@string/user" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:key="password"
+            android:password="true"
+            android:summary="@string/password_summary"
+            android:title="@string/password" >
+        </EditTextPreference>
+
+        <CheckBoxPreference
+            android:key="isNTLM"
+            android:summary="@string/ntlm_summary"
+            android:title="@string/ntlm" >
+        </CheckBoxPreference>
+
+        <EditTextPreference
+            android:key="domain"
+            android:summary="@string/domain_summary"
+            android:title="@string/domain" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:key="certificate"
+            android:summary="@string/certificate_summary"
+            android:title="@string/certificate" >
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/fearute_cat" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="isAutoSetProxy"
+            android:summary="@string/auto_set_proxy_summary"
+            android:title="@string/auto_set_proxy" >
+        </CheckBoxPreference>
+
+        <Preference
+            android:key="proxyedApps"
+            android:summary="@string/proxyed_apps_summary"
+            android:title="@string/proxyed_apps" >
+        </Preference>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="isBypassApps"
+            android:summary="@string/bypass_apps_summary"
+            android:title="@string/bypass_apps" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="isDNSProxy"
+            android:summary="@string/dns_proxy_summary"
+            android:title="@string/dns_proxy" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/notif_cat" >
+        <RingtonePreference
+            android:key="settings_key_notif_ringtone"
+            android:ringtoneType="notification"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:summary="@string/notif_ringtone_summary"
+            android:title="@string/notif_ringtone_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="settings_key_notif_vibrate"
+            android:summary="@string/notif_vibrate_summary"
+            android:title="@string/notif_vibrate_title" />
+    </PreferenceCategory>
+ -->
+</PreferenceScreen>
